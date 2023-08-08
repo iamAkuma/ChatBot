@@ -15,6 +15,8 @@ async function main(){
             { role: 'user', content: 'What is the capital of Nepal?'}
         ]
     });
+
+    console.log(chatCompletion);
 }
 
 main();
