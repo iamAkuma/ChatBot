@@ -8,3 +8,13 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
+async function main(){
+    const chatCompletion = await openai.createChatCompletion({
+        model: 'gpt-3.5-turbo',
+        messages: [
+            { role: 'user', content: 'What is the capital of Nepal?'}
+        ]
+    });
+}
+
+main();
